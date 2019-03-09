@@ -73,7 +73,7 @@ function SimpleCard(props) {
 
 
       <CardActions className="player-box">
-        <div className="player-name">{decodeURI(parsed[name])}</div>
+        <div className="player-name">{decodeURI(parsed['name'])}</div>
         <img className="card-image" src={props.image}/>
       </CardActions>
     </Card>
