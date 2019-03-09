@@ -1,5 +1,9 @@
 import React from "react";
-import Card from "./card";
+import ReactDOM from 'react-dom';
+import Card from '../components/card'
+import '../App.css';
+
+
 
 class Page extends React.Component {
 	constructor(props) {
@@ -7,9 +11,12 @@ class Page extends React.Component {
 		this.state = {};
 	}
 	render() {
-		return (<div className="card-container">
-			<Card/>
-		</div>)
+		return (
+            <div className="page">
+                <Card image="https://securea.mlb.com/mlb/images/players/head_shot/592885.jpg"/>
+                <Card />
+            </div>
+		)
 	}
 }
 export default Page;
