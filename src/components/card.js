@@ -6,9 +6,11 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import TextTable from '/Users/chrisdielschnieder/desktop/code_work/baseballHack/baseballhack/src/components/TextTable.js';
 
 const styles = {
   card: {
+      minWidth: 275,
     minWidth: 275,
   },
   bullet: {
@@ -22,9 +24,12 @@ const styles = {
   pos: {
     marginBottom: 0,
   },
-  root: {
+  left: {
    padding: 0,
    margin: 0
+},
+ right: {
+     backgroundColor: "blue"
  }
 };
 
@@ -33,14 +38,10 @@ function SimpleCard(props) {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={`card`}
-    classes={
-        {
-        root: classes.root
-        }
-  }>
+    <Card className={`card ${props.side === 'left' ? 'left' : 'right'}`}
+    classes={ props.side === 'left' ? {root: classes.left} : {root: classes.right}}>
       <CardContent>
-
+      {props.showText ? <TextTable/> : null}
       </CardContent>
       <CardActions>
         <img className="card-image" src={props.image}/>
