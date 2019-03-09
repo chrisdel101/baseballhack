@@ -13,9 +13,9 @@ import queryString from 'query-string'
 
 function TextTable(props){
     let {classes} = props
-    console.log('kwmefawo',props)
 
     const parsed = queryString.parse(window.location.search);
+    console.log(parsed)
     return(
         <div className={`text-table ${props.side === "left" ? "left-side" : "right-side"}`}>
             <Typography className={classes.title} color="textSecondary" gutterBottom>

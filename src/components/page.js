@@ -23,6 +23,7 @@ class Page extends React.Component {
 		return (
             <div className="page">
                 <BaseballCard
+                    overlay="true"
                     override="true"
                     rootstyle={{
                         padding: 0,
