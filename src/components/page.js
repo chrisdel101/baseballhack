@@ -8,6 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import BaseballCard from '../components/card'
 
 
 
@@ -19,17 +20,17 @@ class Page extends React.Component {
 	render() {
 		return (
             <div className="page">
-                <Card
-                    override={true}
-                    rootStyle={{
+                <BaseballCard
+                    override="true"
+                    rootstyle={{
                         padding: 0,
                     margin: 0}}
                     image="https://securea.mlb.com/mlb/images/players/head_shot/592885.jpg"
                     side="left"
                     />
-                <Card
-                showText={true}
-                side="right"
+                <BaseballCard
+                    showtext="true"
+                    side="right"
                 />
             </div>
 		)
