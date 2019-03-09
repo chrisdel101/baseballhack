@@ -8,27 +8,21 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import queryString from 'query-string'
 
 
 function TextTable(props){
     let {classes} = props
+    console.log('kwmefawo',props)
+
+    const parsed = queryString.parse(window.location.search);
     return(
-        <div className="text-table">
+        <div className={`text-table ${props.side === "left" ? "left-side" : "right-side"}`}>
             <Typography className={classes.title} color="textSecondary" gutterBottom>
-            Baseball World
             </Typography>
             <Typography variant="h5" component="h2">
-            Some Guy
+            {props.listheading}
             </Typography>
-            <Typography className={classes.pos} color="textSecondary">
-            A Rando Team
-            </Typography>
-            <Typography component="p">
-            lorem ipsum etc.
-            <br />
-            {'"a benevolent smile"'}
-            </Typography>
-
         </div>
     )
 }

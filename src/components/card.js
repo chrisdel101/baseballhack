@@ -6,7 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import TextTable from '/Users/chrisdielschnieder/desktop/code_work/baseballHack/baseballhack/src/components/TextTable.js';
+import Text from '/Users/chrisdielschnieder/desktop/code_work/baseballHack/baseballhack/src/components/TextTable.js';
 
 const styles = {
   card: {
@@ -29,20 +29,34 @@ const styles = {
    margin: 0
 },
  right: {
-     backgroundColor: "blue"
+     backgroundColor: "#dddddd",
+     display: "grid",
+     gridTemplateColumns: "50% 50%",
+     gridTemplateRows: "repeat(6, 1fr)"
  }
 };
 
 function SimpleCard(props) {
+
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
-
+  console.log(props.listheading)
   return (
     <Card className={`card ${props.side === 'left' ? 'left' : 'right'}`}
     classes={ props.side === 'left' ? {root: classes.left} : {root: classes.right}}>
-      <CardContent>
-      {props.showText ? <TextTable/> : null}
-      </CardContent>
+
+      {
+          [1,2].map(heading => {
+              return props.showtext === "true" ?
+              <CardContent className="left-side">
+                <Text classes={styles} listheading={heading}/>
+              </CardContent> :
+              null
+
+
+          })
+      }
+
       <CardActions>
         <img className="card-image" src={props.image}/>
       </CardActions>

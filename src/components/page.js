@@ -15,7 +15,9 @@ import BaseballCard from '../components/card'
 class Page extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+            listheading: ["Fourseam", "Sinker", "Slider", "Curve", "Slow Curve", "Change"]
+        };
 	}
 	render() {
 		return (
@@ -27,6 +29,7 @@ class Page extends React.Component {
                     margin: 0}}
                     image="https://securea.mlb.com/mlb/images/players/head_shot/592885.jpg"
                     side="left"
+                    listheading={this.state.listheading}
                     />
                 <BaseballCard
                     showtext="true"
