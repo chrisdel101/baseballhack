@@ -25,11 +25,11 @@ class Page extends React.Component {
         return parse
     }
 	render() {
-        
 		return (
             <div className="page">
                 <BaseballCard
                     image="https://securea.mlb.com/mlb/images/players/head_shot/477132.jpg"
+                    stats={this.parseQueryStr()}
                     />
                 <BaseballCard
                     stats={this.parseQueryStr()}

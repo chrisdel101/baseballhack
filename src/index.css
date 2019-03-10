@@ -59,6 +59,23 @@
     	font-size: 20px;
     }
 
+    .team-font {
+    	position: absolute;
+    	top: 15px;
+    	left: 25px;
+    	font-size: 50px;
+    }
+
+    .team-font.mlb {
+    	color: #b20000;
+    	left: initial;
+    	top: initial;
+    	right: 6px;
+    	font-size: 25px;
+    	z-index: 100;
+    	top: 382px;
+    }
+
     .image-card .card-image {
     	margin: 0;
     	width: 100%;

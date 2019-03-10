@@ -8,9 +8,11 @@ function BaseballCard(props){
             return(
                 <div className="image-card">
                     <div className="image-container">
+                        <i className={`team-font bbclub-${props.stats.team}`}></i>
                         <img className='card-image' src={props.image} />
+                        <i className="team-font mlb bbclub-mlb"></i>
                         <div className="player-name">
-                        <strong>CLAYTON KERSHAW</strong>
+                            <strong>{props.stats.name}</strong>
                         </div>
                     </div>
 
@@ -23,47 +25,47 @@ function BaseballCard(props){
                         <tbody>
                         <tr>
                         <td>Fourseam</td>
-                        <td>{props.stats.Curve}</td>
+                        <td>{props.stats.curve}</td>
                         </tr>
                         <tr>
                             <td>Curve</td>
-                            <td>{props.stats.Curve}</td>
+                            <td>{props.stats.curve}</td>
                         </tr>
                         <tr>
                             <td>Slider</td>
-                            <td>{props.stats.Slider}</td>
+                            <td>{props.stats.slider}</td>
                         </tr>
                         <tr>
                             <td>Change</td>
-                            <td>{props.stats.Change}</td>
+                            <td>{props.stats.change}</td>
                         </tr>
                         <tr>
                             <td>Slowcurve</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Slowcurve</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Slowcurve</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Stat</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Stat</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Stat</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         <tr>
                             <td>Stat</td>
-                            <td>{props.stats.Slowcurve}</td>
+                            <td>{props.stats.slowcurve}</td>
                         </tr>
                         </tbody>
                     </table>
