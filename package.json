@@ -2,7 +2,7 @@
   "name": "baseballhack",
   "version": "0.1.0",
   "private": true,
-  "home": "https://chrisdel101.github.io./baseballhack/baseballhack",
+  "home": "https://chrisdel101.github.io./baseballhack",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "gh-pages": "^2.0.1",
