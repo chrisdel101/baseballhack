@@ -7,16 +7,23 @@ function BaseballCard(props){
         if(props.image){
             return(
                 <div className="image-card">
-                    <img className='card-image' src={props.image} />
+                    <div className="image-container">
+                        <img className='card-image' src={props.image} />
+                        <div className="player-name">
+                        <strong>CLAYTON KERSHAW</strong>
+                        </div>
+                    </div>
+
                 </div>
             )
         } else {
             return(
                 <div className="text-card">
                     <table>
+                        <tbody>
                         <tr>
-                            <td>Fourseam</td>
-                            <td>{props.stats.Fourseam}</td>
+                        <td>Fourseam</td>
+                        <td>{props.stats.Curve}</td>
                         </tr>
                         <tr>
                             <td>Curve</td>
@@ -30,13 +37,42 @@ function BaseballCard(props){
                             <td>Change</td>
                             <td>{props.stats.Change}</td>
                         </tr>
+                        <tr>
+                            <td>Slowcurve</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Slowcurve</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Slowcurve</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Stat</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Stat</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Stat</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        <tr>
+                            <td>Stat</td>
+                            <td>{props.stats.Slowcurve}</td>
+                        </tr>
+                        </tbody>
                     </table>
                 </div>
             )
         }
     }
     return(
-        <div className="baseballcard">
+        <div className={`baseballcard ${props.image  ? 'image-card' : ''}`}>
             {renderData(props)}
         </div>
     )
