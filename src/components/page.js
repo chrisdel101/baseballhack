@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import BaseballCard from '../components/card'
+import BaseballCard from '../components/BaseballCard'
 
 
 
@@ -23,12 +23,7 @@ class Page extends React.Component {
 		return (
             <div className="page">
                 <BaseballCard
-                    overlay="true"
-                    override="true"
-                    rootstyle={{
-                        padding: 0,
-                    margin: 0}}
-                    image="https://securea.mlb.com/mlb/images/players/head_shot/592885.jpg"
+                    image="/imgs/kershaw.png"
                     side="left"
                     listheading={this.state.listheading}
                     />

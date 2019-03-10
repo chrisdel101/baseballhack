@@ -1,82 +1,82 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+    body {
+    	margin: 0;
+    	padding: 0;
+    	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    		sans-serif;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
-}
+    code {
+    	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    		monospace;
+    }
 
-.App {
-	display: flex;
-	justify-content: center;
-	align-items: center
-}
+    .App {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center
+    }
 
-.page {
-	background-color: whitesmoke;
-	width: 80%;
-	height: 500px;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 50px;
-	background-image: url("https://previews.123rf.com/images/prapann/prapann1802/prapann180200055/94966218-rough-white-paper-texture-background.jpg")
-}
+    .page {
+    	background-color: whitesmoke;
+    	width: 80%;
+    	height: 500px;
+    	display: flex;
+    	justify-content: space-evenly;
+    	align-items: center;
+    	margin-top: 50px;
+    	background-image: url("https://previews.123rf.com/images/prapann/prapann1802/prapann180200055/94966218-rough-white-paper-texture-background.jpg")
+    }
 
-.card {
-	width: 300px;
-	height: 400px;
-}
+    .card {
+    	width: 300px;
+    	height: 400px;
+    }
 
-.card .card-image {
-	margin: 0;
-	width: 100%;
-}
+    .image-card .card-image {
+    	margin: 0;
+    	width: 100%;
+    }
 
-.SimpleCard-left-5 div {
-	padding: 0;
-	margin: 0;
-}
+    .SimpleCard-left-5 div {
+    	padding: 0;
+    	margin: 0;
+    }
 
-.card.right {}
+    .card.right {}
 
-.card.right>div {
-	border-right: white 1px solid;
-}
+    .card.right>div {
+    	border-right: white 1px solid;
+    }
 
-.left-side {
-	grid-column: 1;
-	padding: 10px !important;
-}
+    .left-side {
+    	grid-column: 1;
+    	padding: 10px !important;
+    }
 
-.right-side {
-	grid-column: 2/3;
-	padding: 10px !important;
-}
+    .right-side {
+    	grid-column: 2/3;
+    	padding: 10px !important;
+    }
 
-.player-box {
-	position: relative;
-}
+    .player-box {
+    	position: relative;
+    }
 
-.player-name {
-	/* transition: v   isibility 0s linear 0s, opacity 400ms; */
-	position: absolute;
-	left: 0;
-	top: 330px;
-	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 75px;
-	align-items: center;
-	justify-content: center;
-	z-index: 2;
-	display: flex;
-	font-size: 30px;
-	color: white;
-}
+    .player-name {
+    	/* transition: v   isibility 0s linear 0s, opacity 400ms; */
+    	position: absolute;
+    	left: 0;
+    	top: 330px;
+    	background: rgba(0, 0, 0, 0.5);
+    	width: 100%;
+    	height: 75px;
+    	align-items: center;
+    	justify-content: center;
+    	z-index: 2;
+    	display: flex;
+    	font-size: 30px;
+    	color: white;
+    }
