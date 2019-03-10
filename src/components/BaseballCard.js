@@ -13,6 +13,24 @@ function BaseballCard(props){
         } else {
             return(
                 <div className="text-card">
+                    <table>
+                        <tr>
+                            <td>Fourseam</td>
+                            <td>{props.stats.Fourseam}</td>
+                        </tr>
+                        <tr>
+                            <td>Curve</td>
+                            <td>{props.stats.Curve}</td>
+                        </tr>
+                        <tr>
+                            <td>Slider</td>
+                            <td>{props.stats.Slider}</td>
+                        </tr>
+                        <tr>
+                            <td>Change</td>
+                            <td>{props.stats.Change}</td>
+                        </tr>
+                    </table>
                 </div>
             )
         }

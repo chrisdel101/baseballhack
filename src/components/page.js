@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import BaseballCard from '../components/BaseballCard'
+import queryString from 'query-string'
 
 
 
@@ -19,17 +20,19 @@ class Page extends React.Component {
             listheading: ["Fourseam", "Sinker", "Slider", "Curve", "Slow Curve", "Change"]
         };
 	}
+    parseQueryStr(){
+        const parse = queryString.parse(window.location.search)
+        return parse
+    }
 	render() {
+        
 		return (
             <div className="page">
                 <BaseballCard
-                    image="/imgs/kershaw.png"
-                    side="left"
-                    listheading={this.state.listheading}
+                    image="https://securea.mlb.com/mlb/images/players/head_shot/477132.jpg"
                     />
                 <BaseballCard
-                    showtext="true"
-                    side="right"
+                    stats={this.parseQueryStr()}
                 />
             </div>
 		)
