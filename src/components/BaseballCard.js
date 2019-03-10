@@ -10,9 +10,13 @@ function BaseballCard(props){
                     <div className="image-container">
                         <i className={`team-font bbclub-${props.stats.team}`}></i>
                         <img className='card-image' src={props.image} />
-                        <i className="team-font mlb bbclub-mlb"></i>
-                        <div className="player-name">
-                            <strong>{props.stats.name}</strong>
+                        <div className="player-name-container">
+                            <div className="player-name">
+                                <strong>{props.stats.name}</strong>
+                            </div>
+                            <div className="mlb-container">
+                                <img className="mlb" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png"/>
+                            </div>
                         </div>
                     </div>
 
